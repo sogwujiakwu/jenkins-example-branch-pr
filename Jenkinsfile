@@ -17,12 +17,12 @@ pipeline {
         echo 'stage branch'
       }
     }
-    stage('for stage dev') {
+    stage('for dev branch') {
       when {
         branch 'dev'
       }
       steps {
-        echo 'stage dev'
+        echo 'dev branch'
       }
     }    
     stage('for pull request') {
