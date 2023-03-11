@@ -17,7 +17,9 @@ pipeline {
         echo 'stage branch'
       }
     }
+
     stage('for dev branch') {
+
       when {
         branch 'dev'
       }
@@ -25,6 +27,7 @@ pipeline {
         echo 'dev branch'
       }
     }    
+
     stage('for pull request') {
       when {
         changeRequest()
